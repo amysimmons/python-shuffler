@@ -1,0 +1,22 @@
+<div>
+	<h1>CFG Python 2018 Finale</h1>
+	<h2>Who's presenting?</h2>
+
+	{%if not done%}
+		<form action="/shuffle">
+			<button>Shuffle</button>
+		</form>
+	{%endif%}
+
+	{%if team%}
+		<div class="up-next">
+			<p>{{team}}</p>
+		</div>
+	{%endif%}
+
+	{%if done%}
+		<div class="all-done">
+			<h3>Congrats! You're finished!</h3>
+			<img src="/static/images/swift.gif">
+	{%endif%}
+</div>
