@@ -17,13 +17,12 @@ def shuffle():
 		team = shuffled.pop()
 		update_teams(shuffled)
 		return render_template('index.html', team = team)
-		#return redirect(url_for('index', team = team))
 	else:
 		return render_template('index.html', done = True)
-		#return redirct(url_for('index', done = true))
 
 def update_teams(shuffled):
 	global teams
 	teams = shuffled
 
-app.run(host='0.0.0.0', port=port, debug=True)
+# app.run(host='0.0.0.0', port=port, debug=True)
+app.run(host='0.0.0.0', port=port)
