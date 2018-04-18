@@ -15,7 +15,7 @@ def shuffle():
 		shuffled = sorted(teams, key=lambda k: random.random())
 		team = shuffled.pop()
 		update_teams(shuffled)
-		return render_template('index.html', team = team)
+		return render_template('index.html', team = team.upper())
 		#return redirect(url_for('index', team = team))
 	else:
 		return render_template('index.html', done = True)
