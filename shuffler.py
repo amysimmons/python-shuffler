@@ -4,7 +4,15 @@ import os
 
 app = Flask("Shuffler")
 port = int(os.environ.get("PORT", 5000))
-teams = ['miami', 'dishroom', 'sf']
+teams = [
+	'WhatWeather Where',
+	'Resourceboard',
+	'List It',
+	'Show.me',
+	'JustCook',
+	'WeatherFinder',
+	'Saba'
+]
 
 @app.route("/")
 def index(team = None):
