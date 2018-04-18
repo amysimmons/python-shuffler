@@ -1,8 +1,9 @@
 from flask import Flask, render_template
 import random
+import os
 
 app = Flask("Shuffler")
-
+port = int(os.environ.get("PORT", 5000))
 teams = ['miami', 'dishroom', 'sf']
 
 @app.route("/")
@@ -25,4 +26,4 @@ def update_teams(shuffled):
 	global teams
 	teams = shuffled
 
-app.run(debug=True)
+app.run(host='0.0.0.0', port=port, debug=True).
