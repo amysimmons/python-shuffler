@@ -6,16 +6,18 @@
 
     <body>
         <div class="container">
-            <h1>CFG Python 2018 Finale</h1>
+            <h1>CFG Fall 2018 Finale</h1>
             <h2>Who's presenting?</h2>
 
             <div class="hello" id="contact-form">
 
+                <div class="up-next">
                 {%if team%}
-                    <div class="up-next">
-                        <p>{{team}}</p>
-                    </div>
+                    <p>{{team}}</p>
+                {%else%}
+                    <p> 🤔 </p>
                 {%endif%}
+                </div>
 
                 {%if not done%}
                     <form action="/shuffle">

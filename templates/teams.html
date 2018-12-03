@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <title>Shuffler</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Team names</h1>
+
+      <form action="/user_input" methods="post">
+        <input id="box" type="text" name="team_name">
+        <button id="team-input">Input team name</button>
+        <ul id="list">
+          {%for team in team_names%}
+          <li>
+            {{team}}
+          </li>
+          {% endfor %}
+        </ul>
+      </form>
+
+      <form action="/delete">
+        <p>Do you want to delete all team names listed above?</p>
+        <button id="team-purge">Delete team names</button>
+      </form>
+
+      <div>
+        <br>
+        <a href="/">Go to shuffler</a>
+      </div>
+
+  </div>
+
+</body>
+
+</html>

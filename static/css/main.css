@@ -15,6 +15,11 @@ body {
     background-size: cover;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 25px;
+}
+
 .container {
     margin: 100px;
     color: #253547;
@@ -28,6 +33,22 @@ body {
     font-family: sans-serif;
     width: 80%;
     height: auto;
+}
+
+#box {
+    margin: 10px;
+    color: #253547;
+    background-color: #f5f8fa;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    font-family: sans-serif;
+    width: 20%;
+    height: auto;
+    font-size: 20px;
 }
 
 .up-next {
@@ -47,6 +68,34 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#team-purge {
+    background-color: rgb(243, 10, 10); /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+ #team-input {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
     cursor: pointer;
     margin-top: 15px;
 }
